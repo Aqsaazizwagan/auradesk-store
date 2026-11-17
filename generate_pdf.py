@@ -160,14 +160,13 @@ def build_pdf(filename):
 
     meta_table_data = [
         [Paragraph("<b>Assignment Title:</b>", table_cell_style), Paragraph("E-Commerce Online Store Design & Market Feasibility", table_cell_style)],
-        [Paragraph("<b>Course:</b>", table_cell_style), Paragraph("E-Commerce & Digital Marketing", table_cell_style)],
-        [Paragraph("<b>Marks Weightage:</b>", table_cell_style), Paragraph("10 Marks", table_cell_style)],
-        [Paragraph("<b>Submission Type:</b>", table_cell_style), Paragraph("Individual Assignment", table_cell_style)],
-        [Paragraph("<b>Student Name:</b>", table_cell_style), Paragraph("[Enter Your Full Name Here]", table_cell_style)],
-        [Paragraph("<b>Roll / Student ID:</b>", table_cell_style), Paragraph("[Enter Your Roll Number Here]", table_cell_style)],
-        [Paragraph("<b>Professor / Instructor:</b>", table_cell_style), Paragraph("[Instructor Name]", table_cell_style)],
-        [Paragraph("<b>Submission Date:</b>", table_cell_style), Paragraph("November 2026", table_cell_style)],
-        [Paragraph("<b>Prototype Store File:</b>", table_cell_style), Paragraph("auradesk_store/index.html (HTML5 / Shopify Prototype Ready)", table_cell_style)],
+        [Paragraph("<b>Course:</b>", table_cell_style), Paragraph("E-Commerce (10 Marks Task)", table_cell_style)],
+        [Paragraph("<b>Student Name:</b>", table_cell_style), Paragraph("Aqsa Aziz Wagan", table_cell_style)],
+        [Paragraph("<b>Roll No / Batch:</b>", table_cell_style), Paragraph("[Your Roll No & Batch e.g. 2k23 (Part IV) PM]", table_cell_style)],
+        [Paragraph("<b>Submitted To:</b>", table_cell_style), Paragraph("Sir Zuhaib (zuhaib@usindh.edu.pk)", table_cell_style)],
+        [Paragraph("<b>Institution:</b>", table_cell_style), Paragraph("University of Sindh", table_cell_style)],
+        [Paragraph("<b>Submission Date:</b>", table_cell_style), Paragraph("17 November 2026", table_cell_style)],
+        [Paragraph("<b>Live Website URL:</b>", table_cell_style), Paragraph("https://aqsaazizwagan.github.io/auradesk-store/", table_cell_style)],
     ]
     meta_table = Table(meta_table_data, colWidths=[150, 350])
     meta_table.setStyle(TableStyle([

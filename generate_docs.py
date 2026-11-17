@@ -66,15 +66,16 @@ def create_word_document(filepath):
     run_sub.font.color.rgb = RGBColor(0x4B, 0x55, 0x63)
 
     # Meta Table for Student Info
-    meta_table = doc.add_table(rows=6, cols=2)
+    meta_table = doc.add_table(rows=7, cols=2)
     meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
     meta_data = [
-        ("Student Name:", "[Your Name Here]"),
-        ("Roll / Student ID:", "[Your Roll Number Here]"),
-        ("Course Name:", "E-Commerce & Digital Marketing"),
-        ("Instructor / Professor:", "[Instructor's Name Here]"),
-        ("Assignment Type:", "Individual Project (10 Marks)"),
-        ("Store URL / Prototype:", "auradesk-store.local (HTML5 / Shopify Prototype Ready)")
+        ("Student Name:", "Aqsa Aziz Wagan"),
+        ("Roll No & Batch:", "[Your Roll No & Batch e.g. 2k23 (Part IV) PM]"),
+        ("Course Name:", "E-Commerce (10 Marks Task)"),
+        ("Submitted To:", "Sir Zuhaib (zuhaib@usindh.edu.pk)"),
+        ("Institution:", "University of Sindh"),
+        ("Submission Date:", "17 November 2026"),
+        ("Live Store URL:", "https://aqsaazizwagan.github.io/auradesk-store/")
     ]
     for i, (label, val) in enumerate(meta_data):
         row = meta_table.rows[i]
